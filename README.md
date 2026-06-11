@@ -1,139 +1,120 @@
-[Dm Product Scraper](https://apify.com/m3web/dm-product-scraper?fpr=data)
+[Dm Product Scraper](https://apify.com/bytepulselabs/dm-product-scraper?fpr=data)
 
-## Overview
+## What is dm.cz Product Scraper?
 
-Easily collect product data from DM-drogeriemarkt websites across all countries where the company operates. This scraper supports product categories, filtered results, and individual product URLs, making it ideal for gathering detailed product information such as GTIN, name, brand, price, availability, ratings, and more.
+dm.cz Product Scraper automates the **extraction of product data from dm.cz**. Just provide a product category URL to scrape all the publicly available product information you need.
 
-| Website | Country |
+## Why scrape dm.cz products?
+
+dm.cz product data can give you valuable information about pricing trends, product availability, specifications, and market analysis. This helps with competitive research, price monitoring, and market intelligence.
+
+## How to scrape dm.cz products
+
+dm.cz Product Scraper is designed to be fast and easy to use so there aren't too many parameters or settings. Just follow the steps below:
+
+1. Create a free Apify account.
+2. Open [dm.cz Product Scraper](https://apify.com/bytepulselabs/dm-product-scraper?fpr=k8fqp).
+3. Add a product category URL from dm.cz to scrape.
+4. Click "Save & Start" and wait for the datasets to be extracted.
+5. Download your data in JSON, XML, CSV, Excel, or HTML.
+
+## Input example
+
+The input for dm.cz Product Scraper should be a **product category URL from dm.cz**. You can add one or multiple category URLs to scrape all products from those categories.
+
+![dm.cz Product Scraper input](https://images.apifyusercontent.com/xwHfw9cp0iGNzVqhNUdSCw1nRmy0aQ5ZBe1IaLIN320/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L2RtLXByb2R1Y3Qtc2NyYXBlci9pbnB1dC5qcGc.webp)
+
+Here's a sample of scraping products from a dm.cz category page.
+
+In JSON it looks like this:
+
+```
+{
+  "urls": [{ "url": "https://www.dm.cz/zvirata/kocky/stelivo" }],
+  "proxy": {
+    "useApifyProxy": true,
+    "apifyProxyGroups": ["RESIDENTIAL"],
+    "apifyProxyCountry": "CZ"
+  }
+}
+```
+
+## Output example
+
+The results will be wrapped into a dataset which you can always find in the **Storage** tab. Here's an excerpt from the data you'd get:
+
+![dm.cz Product Scraper output](https://images.apifyusercontent.com/10go8kyhnZ3nJ5Bf0dL4EJ4Ibs8Vbgk5fPZIAPzK6HQ/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L2RtLXByb2R1Y3Qtc2NyYXBlci9vdXRwdXQuanBn.webp)
+
+Here is the same data but in JSON. You can download the dataset extracted by dm.cz Product Scraper in various formats such as JSON, HTML, CSV, or Excel.
+
+```
+{
+  "id": "4066447437522",
+  "name": "PROFISSIMO Formičky na zmrzlinu",
+  "description": "<p>Silikonové formičky na domácí zmrzlinu s praktickými rukojeťmi pro snadné vyjmutí.</p>",
+  "url": "https://www.dm.cz/profissimo-formicky-na-zmrzlinu-p4066447437522.html",
+  "price": {
+    "value": 149,
+    "currency": "CZK"
+  },
+  "availability": "in stock",
+  "condition": "new",
+  "rating": {
+    "value": 4.5,
+    "count": 23
+  },
+  "categories": [
+    "Domácnost > Kuchyně > Formy a formičky"
+  ],
+  "brand": "PROFISSIMO",
+  "imageUrls": [
+    "https://product-cdn.dm-static.com/images/66447437522_1.jpg",
+    "https://product-cdn.dm-static.com/images/66447437522_2.jpg"
+  ]
+}
+```
+
+## Integrate dm.cz Product Scraper and automate your workflow
+
+Last but not least, dm.cz Product Scraper can be connected with almost any cloud service or web app thanks to [integrations](https://apify.com/integrations?fpr=k8fqp) on the Apify platform.
+
+These include:
+
+- [Make](https://docs.apify.com/platform/integrations/make?fpr=k8fqp)
+- [Zapier](https://docs.apify.com/platform/integrations/zapier?fpr=k8fqp)
+- [Slack](https://docs.apify.com/platform/integrations/slack?fpr=k8fqp)
+- [Airbyte](https://docs.apify.com/platform/integrations/airbyte?fpr=k8fqp)
+- [GitHub](https://docs.apify.com/platform/integrations/github?fpr=k8fqp)
+- [Google Drive](https://docs.apify.com/platform/integrations/drive?fpr=k8fqp)
+- and [much more](https://docs.apify.com/platform/integrations?fpr=k8fqp).
+
+Alternatively, you can use [webhooks](https://docs.apify.com/platform/integrations/webhooks?fpr=k8fqp) to carry out an action whenever an event occurs. For example, you can get a notification whenever dm.cz Product Scraper successfully finishes a run.
+
+## Want to scrape products from other ecommerce stores?
+
+Looking for product scrapers for other ecommerce platforms? We offer specialized product scrapers for various online stores. Each scraper is optimized for its specific platform to ensure fast, reliable data extraction with minimal configuration.
+
+| ![alza.cz Product Scraper](https://images.apifyusercontent.com/Nf89uEur8FJsBOW1TGWW-UBYUW0BZ9Cw43PSu7uSACg/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L2FsemEtcHJvZHVjdC1zY3JhcGVyL2xvZ28ucG5n.webp) [alza.cz Product Scraper](https://apify.com/bytepulselabs/alza-product-scraper?fpr=k8fqp) | ![dm.cz Product Scraper](https://images.apifyusercontent.com/ZbU2Ck2qC89br4vcyPX37HO-AezSeVGT3yOTEOLVPts/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L2RtLXByb2R1Y3Qtc2NyYXBlci9sb2dvLnBuZw.webp) [dm.cz Product Scraper](https://apify.com/bytepulselabs/dm-product-scraper?fpr=k8fqp) |
 | --- | --- |
-| [www.dm.de](https://www.dm.de/) | Germany |
-| [www.dm-drogeriemarkt.at](https://www.dm-drogeriemarkt.at/) | Austria |
-| [www.dm-drogeriemarkt.ba](https://www.dm-drogeriemarkt.ba/) | Bosnia and Herzegovina |
-| [www.dm-drogeriemarkt.bg](https://www.dm-drogeriemarkt.bg/) | Bulgaria |
-| [www.dm.hr](https://www.dm.hr/) | Croatia |
-| [www.dm.cz](https://www.dm.cz/) | Czech Republic |
-| [www.dm.hu](https://www.dm.hu/) | Hungary |
-| [www.dm-drogeriemarkt.it](https://www.dm-drogeriemarkt.it/) | Italy |
-| [www.dm.pl](https://www.dm.pl/) | Poland |
-| [www.dm.ro](https://www.dm.ro/) | Romania |
-| [www.dm.rs](https://www.dm.rs/) | Serbia |
-| [www.dm.sk](https://www.dm.sk/) | Slovakia |
-| [www.dm.si](https://www.dm.si/) | Slovenia |
+| ![kytary.cz Product Scraper](https://images.apifyusercontent.com/0Ws78BwbhX8a6b5Kfbg4ObI_Nu9UfHQWSM8sPrfuG-A/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L2t5dGFyeS1wcm9kdWN0LXNjcmFwZXIvbG9nby5wbmc.webp) [kytary.cz Product Scraper](https://apify.com/bytepulselabs/kytary-product-scraper?fpr=k8fqp) | ![smarty.cz Product Scraper](https://images.apifyusercontent.com/LSg4Pa2JQNmdlEu7a2DSwDWyq68TjunS0hmYVqgeoqU/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L3NtYXJ0eS1wcm9kdWN0LXNjcmFwZXIvbG9nby5wbmc.webp) [smarty.cz Product Scraper](https://apify.com/bytepulselabs/smarty-product-scraper?fpr=k8fqp) |
+| ![underarmour.cz Product Scraper](https://images.apifyusercontent.com/1cGkOOT-r48Vj4d9z5eSgz7hhLrqTj8ekIZ1rvwzAEI/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L3VuZGVyLWFybW91ci1wcm9kdWN0LXNjcmFwZXIvbG9nby5wbmc.webp) [underarmour.cz Product Scraper](https://apify.com/bytepulselabs/under-armour-product-scraper?fpr=k8fqp) | ![zoot.cz Product Scraper](https://images.apifyusercontent.com/PMNPi6RB2Zwuig-SKvAfex7oGt6OLnCdJusdPuq3g2g/w:1800/cb:1/aHR0cHM6Ly9wdWItMjExYjE3YzgxNGFmNGZiNjk5M2IxZDkxMjNhZWVkMjEucjIuZGV2L3pvb3QtcHJvZHVjdC1zY3JhcGVyL2xvZ28ucG5n.webp) [zoot.cz Product Scraper](https://apify.com/bytepulselabs/zoot-product-scraper?fpr=k8fqp) |
 
-## Features
+## Your feedback
 
-- Supports product categories, filtered results and individual product URLs.
-- Fetches detailed product information, including GTIN, name, price, brand, availability, ratings, and more.
+We're always working on improving our Actors' performance. If you have any technical feedback for dm.cz Product Scraper or simply found a bug, please create an issue on the Actor's [Issues tab](https://apify.com/bytepulselabs/dm-product-scraper/issues?fpr=k8fqp) in Apify Console.
 
-**Important Notice on "/search" URLs**
+## FAQ
 
-This scraper is designed to comply fully with the website's [robots.txt](https://www.dm.de/robots.txt) rules. According to these rules, URLs containing "/search" are disallowed and therefore will be automatically skipped by the scraper. Users are advised not to generate URLs using the search functionality of the website, as such URLs will not be processed. The scraper ensures adherence to these rules to respect the website's terms of service and policies.
+### How can I use dm.cz Product Scraper with the Apify API?
 
-## URL examples
+The Apify API gives you programmatic access to the Apify platform. [The API](https://apify.com/bytepulselabs/dm-product-scraper/api?fpr=k8fqp) is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.
 
-- Category: [https://www.dm.de/pflege-und-parfum/parfum/damen-parfum](https://www.dm.de/pflege-und-parfum/parfum/damen-parfum)
-- Category with filters: [https://www.dm.de/pflege-und-parfum?allCategories.id0=020000&pageSize0=10&sort0=editorial_relevance&brandName0=NIVEA&currentPage0=0](https://www.dm.de/pflege-und-parfum?allCategories.id0=020000&pageSize0=10&sort0=editorial_relevance&brandName0=NIVEA&currentPage0=0)
-- Single Product [https://www.dm.de/nivea-gesichtscreme-in-der-dose-p4005900917171.html](https://www.dm.de/nivea-gesichtscreme-in-der-dose-p4005900917171.html)
+To access the API using Node.js, use the `apify-client` NPM package. To access the API using Python, use the `apify-client` PyPI package.
 
-**Scraping Limitations per URL for "Category URL"**
+Check out the [Apify API reference](https://docs.apify.com/api/v2?fpr=k8fqp) docs for full details or click on the [dm.cz Product Scraper API tab](https://apify.com/bytepulselabs/dm-product-scraper/api?fpr=k8fqp) for code examples.
 
-The maximum number of products that can be scraped from one "Category URL" or "Category URL with filters" is limited to **200**. If the total product count exceeds 200, use multiple URLs from subcategories or apply filters to stay within the limit. There is no restriction on the overall number of results you can collect using this scraper.
+### How much does it cost to use dm.cz Product Scraper?
 
-## Results
+dm.cz Product Scraper uses the **Pay-per-result** pricing model, so your costs can be easily calculated: it will cost you **$6 to scrape 1,000 results**, so $0.006 per item.
 
-### Sample Output
-
-The following is a sample output you can expect from the DM Product Scraper:
-
-**From Product Category URL**
-
-```
-{
-    "website": "dm.de",
-    "gtin": 8411061041673,
-    "dan": 1598845,
-    "brand": "CAROLINA HERRERA",
-    "title": "Good Girl Eau de Parfum, 30 ml",
-    "category": "Damen Parfum",
-    "image": "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_320,w_320/v1747524668/assets/pas/images/ec835906-2a35-4d8e-9cf2-4b0f2c798485/carolina-herrera-good-girl-eau-de-parfum",
-    "priceCurrency": "EUR",
-    "price": 59.95,
-    "url": "https://www.dm.de/carolina-herrera-good-girl-eau-de-parfum-p8411061041673.html",
-    "ratingValue": 4.9,
-    "ratingCount": 10,
-    "additionalData": {
-      "priceInfo": {
-        "tileInfos": ["0,03 l (1.998,33 € je 1 l)"],
-        "price": { "current": { "value": "59,95 €" } },
-        "prefix": "Einzelpreis"
-      },
-      "netPriceInfo": {
-        "tileInfos": ["0,03 l (1.679,27 € je 1 l)"],
-        "price": { "current": { "value": "50,38 €" } },
-        "prefix": "Einzelpreis"
-      },
-      "categories": ["Damen Parfum"],
-      "a11yLabel": "Marke: CAROLINA HERRERA; Produktname: Good Girl Eau de Parfum, 30 ml; Preis: 59,95 €; Grundpreis: 0,03 l (1.998,33 € je 1 l); Nur im Online-Shop erhältlich; 4,9 von 5 Sternen bei 10 Bewertungen"
-    }
-  }
-```
-
-**From Single Product URL**
-
-```
-{
-    "website": "dm.de",
-    "gtin": 4005900917171,
-    "dan": 1442173,
-    "brand": "NIVEA",
-    "title": "Gesichtscreme in der Dose, 250 ml",
-    "category": "Bodylotion & Hautcreme",
-    "image": "https://products.dm-static.com/images/f_auto,q_auto,c_fit,h_440,w_500/v1755095906/assets/pas/images/290af9fc-c152-4bd1-a528-6d11d13ffc47/nivea-gesichtscreme-in-der-dose",
-    "priceCurrency": "EUR",
-    "price": 3.65,
-    "url": "https://www.dm.de/nivea-gesichtscreme-in-der-dose-p4005900917171.html",
-    "ratingValue": 4.8229,
-    "ratingCount": 638,
-    "additionalData": {
-      "priceInfo": {
-        "infos": [
-          "0,25 l (14,60 € je 1 l)",
-          "inkl. MwSt. zzgl. <linking>Versand</linking>"
-        ],
-        "paybackInfo": "Du erhältst <bold>1 PAYBACK</bold> °Punkt",
-        "price": { "current": { "value": "3,65 €" } },
-        "notIncreasedSince": {
-          "text": "nicht erhöht seit 21.03.2024",
-          "title": "dm-Dauerpreis"
-        }
-      },
-      "netPriceInfo": {
-        "infos": [
-          "0,25 l (12,27 € je 1 l)",
-          "exkl. MwSt. zzgl. <linking>Versand</linking>"
-        ],
-        "price": { "current": { "value": "3,07 €" } },
-        "notIncreasedSince": {
-          "text": "nicht erhöht seit 21.03.2024",
-          "title": "dm-Dauerpreis"
-        }
-      },
-      "breadcrumbs": [
-        "Pflege & Parfum",
-        "Körperpflege",
-        "Bodylotion & Hautcreme"
-      ],
-      "description": [
-        "Die NIVEA Creme in der 250ml Dose pflegt mit ihrer reichhaltigen Formel jeder Hauttyp unabhängig vom Alter und zu jeder Gelegenheit. Die cremige Textur mit dem beliebten Duft schützt und verwöhnt die Haut besonders unkompliziert – für eine schöne, geschmeidige Haut. Geeignet für die tägliche Anwendung, wo auch immer die Haut sanfte und reichhaltige Pflege benötigt. Dermatologisch bestätigt hautverträglich."
-      ]
-    }
-  }
-```
-
-## GTIN-13 (EAN) Number
-
-DM Product Scraper collects GTIN (EAN) numbers when provided with a Single Product URL and Product Category URLs.
-
-## Is it legal to scrape DM-drogeriemarkt website?
-
-This scraper was designed to comply with the directives specified in the [dm.de robots.txt](https://www.dm.de/robots.txt) file as of 25.03.2025.
+Given that with the [Apify Free plan](https://apify.com/pricing?fpr=k8fqp), you get **$5 in credits monthly for free**, this tool might be your best free product scraper of all.
